@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
-import darkTheme from "../action/darkTheme";
-const allReducers = combineReducers({ darkTheme });
+import darkThemeReducer from "./darkThemeReducer";
+import loaderReducer from "./loaderReducer";
+
+const allReducers = combineReducers({ darkThemeReducer, loaderReducer });
 export default allReducers;
